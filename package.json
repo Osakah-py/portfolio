@@ -2,7 +2,7 @@
   "name": "eportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://osakah-py.github.io/portfolio/",
+  "homepage": "https://www.alexandre-lescot.fr",
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.2",
     "@radix-ui/themes": "^3.1.4",
