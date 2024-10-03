@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .nav-links a, .nav-menu-btn {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .dropdown-content {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: absolute;
+  }
+  
+  .dropdown-item a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown-item a:hover {
+    background-color: #f0f0f0;
+  }
+  
