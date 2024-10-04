@@ -1,36 +1,78 @@
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import React from 'react';
 
 import '../styles/Navbar.css'
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="nav-logo">
-        <a href="/">My Website</a>
-      </div>
-      <div className="nav-links">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
-        <DropdownMenu.Root>
-          <DropdownMenu.Trigger asChild>
-            <button className="nav-menu-btn">Menu</button>
-          </DropdownMenu.Trigger>
-          <DropdownMenu.Content className="dropdown-content">
-            <DropdownMenu.Item className="dropdown-item">
-              <a href="/profile">Profile</a>
-            </DropdownMenu.Item>
-            <DropdownMenu.Item className="dropdown-item">
-              <a href="/settings">Settings</a>
-            </DropdownMenu.Item>
-            <DropdownMenu.Item className="dropdown-item">
-              <a href="/logout">Logout</a>
-            </DropdownMenu.Item>
-          </DropdownMenu.Content>
-        </DropdownMenu.Root>
-      </div>
-    </nav>
+      <NavigationMenu.Root className='NavigationMenuRoot'>
+		<NavigationMenu.List className='NavigationMenuList'>
+			<NavigationMenu.Item>
+				<NavigationMenu.Trigger className='NavigationMenuTrigger'/>
+				<NavigationMenu.Content className="NavigationMenuContent">
+                    <NavigationMenu.Link 
+                        className='NavigationMenuLink'
+                        href='#'>
+                            Career Developement
+                    </NavigationMenu.Link>
+				</NavigationMenu.Content>
+			</NavigationMenu.Item>
+            
+			<NavigationMenu.Item>
+            <NavigationMenu.Link 
+                        className='NavigationMenuLink'
+                        href='#'>
+                            Welcome
+                    </NavigationMenu.Link>
+			</NavigationMenu.Item>
+
+			<NavigationMenu.Item>
+            <NavigationMenu.Link 
+                        className='NavigationMenuLink'
+                        href='#'>
+                            Engineering course
+                    </NavigationMenu.Link>
+			</NavigationMenu.Item>
+
+			<NavigationMenu.Item>
+            <NavigationMenu.Link 
+                        className='NavigationMenuLink'
+                        href='#'>
+                            International Mobility
+                    </NavigationMenu.Link>
+			</NavigationMenu.Item>
+
+			<NavigationMenu.Item>
+            <NavigationMenu.Link 
+                        className='NavigationMenuLink'
+                        href='#'>
+                            Sport & other activities
+                    </NavigationMenu.Link>
+			</NavigationMenu.Item>
+
+			<NavigationMenu.Item>
+            <NavigationMenu.Link 
+                        className='NavigationMenuLink'
+                        href='#'>
+                            Career Developement
+                    </NavigationMenu.Link>
+			</NavigationMenu.Item>
+
+			<NavigationMenu.Item>
+				<NavigationMenu.Trigger />
+				<NavigationMenu.Content>
+					<NavigationMenu.Sub>
+						<NavigationMenu.List />
+						<NavigationMenu.Viewport />
+					</NavigationMenu.Sub>
+				</NavigationMenu.Content>
+			</NavigationMenu.Item>
+
+			<NavigationMenu.Indicator />
+		</NavigationMenu.List>
+
+		<NavigationMenu.Viewport />
+	</NavigationMenu.Root>
   );
 };
 
