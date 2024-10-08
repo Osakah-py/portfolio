@@ -1,0 +1,21 @@
+@import "@radix-ui/themes/tokens/base.css";
+
+
+.HeaderRoot {
+    /* background-color: var(--gray-a2); */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/monterey-sierra-blue-day.jpg");
+    border-radius: var(--radius-3);
+    min-height: 100dvh;
+    justify-content: space-evenly;
+}
+.dark .HeaderRoot{
+    background-image: url("../assets/monterey-sierra-blue-night.jpg");
+}
+
+.ImageHeader {
+    align-self: flex-end;
+}

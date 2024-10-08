@@ -1,17 +1,23 @@
-import { Text, Flex, Box, Section, Container } from '@radix-ui/themes';
+import { Text, Flex, Box, Section, Container, Heading } from '@radix-ui/themes';
+
+import '../styles/Header.css'
+import template from "../assets/template.png"
 
 function Header() {
     return (
-        <Flex direction="column" gap="2">
-            <Box
-                py="8"
-                style={{ backgroundColor: 'var(--gray-a2)', borderRadius: 'var(--radius-3)', width:'100vw', height:'100vw'}}
-            >
-                    <Section size="2" />
-                    <Container size="1" >
-                <Text>Alexandre Lescot </Text>
-                </ Container>       
-                
+        <Flex 
+        direction="row" 
+        wrap="wrap"
+        align="center"
+        className='HeaderRoot'
+        style={{"justify-content" : 'space-evenly'}}
+        >
+            <Box>
+                <Heading size="8">Alexandre Lescot</Heading>
+                <Text>1A FISE ENSEEIHT </Text>                 
+            </Box>
+            <Box className='ImageHeader'>
+                <img src={template}   style={{"min-height" : "750px", "height" : "75dvh"}}/>
             </Box>
         </Flex>
     );
