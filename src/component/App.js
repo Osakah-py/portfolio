@@ -10,7 +10,7 @@ function App() {
     <html>
       <body>
         <ThemeProvider attribute="class">
-          <Theme accentColor="crimson" grayColor="sand" radius="large" scaling="95%">
+          <Theme accentColor="sky" grayColor="sand" radius="large" scaling="95%">
             <NavigationMenuDemo />
             <Header />
             <p>Test</p>

@@ -1,19 +1,25 @@
 @import "@radix-ui/themes/tokens/base.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+.kalam-bold {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
 
 .HeaderRoot {
-    /* background-color: var(--gray-a2); */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../assets/monterey-sierra-blue-day.jpg");
-    border-radius: var(--radius-3);
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
     min-height: 100dvh;
-    justify-content: space-evenly;
 }
 .dark .HeaderRoot{
     background-image: url("../assets/monterey-sierra-blue-night.jpg");
+    box-shadow: inset 0 0 0 0px;
 }
 
 .ImageHeader {
