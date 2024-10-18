@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.f33c3e45.css",
-    "main.js": "/static/js/main.6214c6c9.js",
+    "main.css": "/static/css/main.297bead5.css",
+    "main.js": "/static/js/main.a942adfb.js",
     "static/js/453.0394f42a.chunk.js": "/static/js/453.0394f42a.chunk.js",
     "static/media/monterey-sierra-blue-night.jpg": "/static/media/monterey-sierra-blue-night.36b9a5bfda4a8a28b0c8.jpg",
     "static/media/monterey-sierra-blue-day.jpg": "/static/media/monterey-sierra-blue-day.1ed686f62a850d27d8ed.jpg",
     "static/media/template.png": "/static/media/template.1cba749b1401bfeaa39c.png",
     "index.html": "/index.html",
-    "main.f33c3e45.css.map": "/static/css/main.f33c3e45.css.map",
-    "main.6214c6c9.js.map": "/static/js/main.6214c6c9.js.map",
+    "main.297bead5.css.map": "/static/css/main.297bead5.css.map",
+    "main.a942adfb.js.map": "/static/js/main.a942adfb.js.map",
     "453.0394f42a.chunk.js.map": "/static/js/453.0394f42a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f33c3e45.css",
-    "static/js/main.6214c6c9.js"
+    "static/css/main.297bead5.css",
+    "static/js/main.a942adfb.js"
   ]
 }
