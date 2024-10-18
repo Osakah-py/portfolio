@@ -15,7 +15,7 @@
     background-size: cover;
     background-image: url("../assets/monterey-sierra-blue-day.jpg");
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
-    min-height: 100dvh;
+    min-height: 90dvh;
 }
 .dark .HeaderRoot{
     background-image: url("../assets/monterey-sierra-blue-night.jpg");
@@ -24,4 +24,6 @@
 
 .ImageHeader {
     align-self: flex-end;
+    min-height : 750px;
+    height : 75dvh;
 }

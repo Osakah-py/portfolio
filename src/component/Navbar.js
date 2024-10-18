@@ -2,9 +2,10 @@ import React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import classNames from "classnames";
 import { CaretDownIcon } from "@radix-ui/react-icons";
+
 import "../styles/Navbar.css";
 
-const Navbar = () => {
+function Navbar() {
 	return (
 		<NavigationMenu.Root className="NavigationMenuRoot">
 			<NavigationMenu.List className="NavigationMenuList">

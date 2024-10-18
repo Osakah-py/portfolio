@@ -2,8 +2,8 @@ import { Theme } from '@radix-ui/themes';
 import { ThemeProvider } from 'next-themes';
 
 import Header from './Header';
-//import Navbar from './Navbar';
 import Navbar from './Navbar';
+import CategoryPresentation from './CategoryPresentation';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
           <Theme accentColor="sky" grayColor="sand" radius="large" scaling="95%">
             <Navbar />
             <Header />
-            <p>Test</p>
+            <CategoryPresentation />
           </Theme>
         </ThemeProvider>
       </body>

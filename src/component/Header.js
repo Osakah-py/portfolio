@@ -1,4 +1,4 @@
-import { Text, Flex, Box, Button, Em, Heading } from '@radix-ui/themes';
+import { Text, Flex, Button, Em, Heading } from '@radix-ui/themes';
 
 import '../styles/Header.css'
 import template from "../assets/template.png"
@@ -14,17 +14,22 @@ function Header() {
         className='HeaderRoot'
         >
             <Flex
-                direction="column">
+                direction="column"
+                gap="5">
                 <Heading size="9" weight="bold" > 
                     <Text className='kalam-bold'>Alexandre </Text>
                     <Em>Lescot</Em>
                     </Heading>
-                <Text as='p'> Hi ! I'm <Em>Alexandre</Em>, a Computer science student at <Em>ENSEEIHT</Em> </Text>
-                <Button variant='surface' style={{"margin" : "10px 50px"}}>CV</Button>         
+                <Text as='p'> Hi ! I'm <Em>Alexandre</Em>, a passionate computer science student at <Em>ENSEEIHT</Em> </Text>
+                <Flex
+                    gap="3">
+                <Button variant='surface' style={{"max-width" : "100px"}}>CV 🇫🇷</Button>         
+                <Button variant='surface' style={{"max-width" : "100px"}}>CV 🇬🇧</Button>     
+                </Flex>    
             </Flex>
-            <Box className='ImageHeader' p="0">
-                <img src={template}   style={{"min-height" : "750px", "height" : "75dvh"}}/>
-            </Box>
+            
+                <img src={template} className='ImageHeader'/>
+            
         </Flex>
     );
 }

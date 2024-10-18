@@ -1,0 +1,13 @@
+@import "@radix-ui/themes/tokens/base.css";
+
+.CatPresContainer {
+    background-color: rgb(204, 221, 237);
+    margin: 5% 10%;
+    padding: 3% 2%;
+    border-radius: max(var(--radius-2), var(--radius-full));
+}
+
+.CatPresImage {
+    height: auto;
+    width: 50%;
+}
