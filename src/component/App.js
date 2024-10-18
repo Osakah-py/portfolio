@@ -3,7 +3,7 @@ import { ThemeProvider } from 'next-themes';
 
 import Header from './Header';
 //import Navbar from './Navbar';
-import NavigationMenuDemo from './Navbar_example';
+import Navbar from './Navbar';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <body>
         <ThemeProvider attribute="class">
           <Theme accentColor="sky" grayColor="sand" radius="large" scaling="95%">
-            <NavigationMenuDemo />
+            <Navbar />
             <Header />
             <p>Test</p>
           </Theme>

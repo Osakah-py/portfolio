@@ -1,7 +1,10 @@
+@import "@radix-ui/themes/tokens/base.css";
+
 @import "@radix-ui/colors/black-alpha.css";
 @import "@radix-ui/colors/indigo.css";
 @import "@radix-ui/colors/mauve.css";
 @import "@radix-ui/colors/purple.css";
+@import "@radix-ui/colors/violet.css";
 
 /* reset */
 button,
@@ -11,28 +14,24 @@ p {
 
 .NavigationMenuRoot {
 	position: fixed;
-	/* display: flex;
-	justify-content: space-around; */
+	display: flex;
+	justify-content: center;
 	width: 100vw;
 	z-index: 1;
-  box-shadow: 0 2px 10px var(--black-a7);
 }
 
 .NavigationMenuList > div {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+  }
 
 .NavigationMenuList {
 	display: flex;
-	justify-content: space-around;
-  flex-grow: 1;
-	/* background-color: white; */
-	padding: 10px;
+	justify-content: center;
+	padding: 4px;
 	border-radius: 6px;
 	list-style: none;
-	/* box-shadow: 0 2px 10px var(--black-a7); */
 	margin: 0;
 }
 
@@ -72,8 +71,8 @@ p {
 
 .NavigationMenuContent {
 	position: absolute;
-	top: 100%;
-	left: 50%;
+	top: 0;
+	left: 0;
 	width: 100%;
 	animation-duration: 250ms;
 	animation-timing-function: ease;
@@ -95,11 +94,6 @@ p {
 		width: auto;
 	}
 }
-.MainNavbarItem {
-  /* flex-grow: 5; */
-  padding-right: auto;
-}
-
 
 .NavigationMenuIndicator {
 	display: flex;
@@ -125,7 +119,7 @@ p {
 	transform-origin: top center;
 	margin-top: 10px;
 	width: 100%;
-	background-color: white;
+	background-color: var(--color-panel-solid);
 	border-radius: 6px;
 	overflow: hidden;
 	box-shadow:
@@ -155,17 +149,16 @@ p {
 	margin: 0;
 	row-gap: 10px;
 	list-style: none;
-  background-color: var(--color-panel-solid);
 }
 @media only screen and (min-width: 600px) {
 	.List.one {
-		width: 250px;
+		width: 300px;
 		grid-template-columns: 1fr;
 	}
 	.List.two {
-		width: 600px;
-		grid-auto-flow: column;
-		grid-template-rows: repeat(3, 1fr);
+		width: 300px;
+		/* grid-auto-flow: column; */
+		grid-template-rows: 1fr;
 	}
 }
 
@@ -180,7 +173,7 @@ p {
 	line-height: 1;
 }
 .ListItemLink:focus {
-	box-shadow: 0 0 0 2px var(--violet-7);
+	box-shadow: 0 0 0 2px var(--accent-7);
 }
 .ListItemLink:hover {
 	background-color: var(--accent-3);
