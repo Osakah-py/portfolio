@@ -13,12 +13,16 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../assets/monterey-sierra-blue-day.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1)),
+                      url("../assets/monterey-sierra-blue-day.jpg");
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
     min-height: 90dvh;
+    padding-top: 50px;
+    padding-left: 20px;
 }
 .dark .HeaderRoot{
-    background-image: url("../assets/monterey-sierra-blue-night.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1)),
+                      url("../assets/monterey-sierra-blue-night.jpg");
     box-shadow: inset 0 0 0 0px;
 }
 
@@ -26,4 +30,6 @@
     align-self: flex-end;
     min-height : 750px;
     height : 75dvh;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
 }
