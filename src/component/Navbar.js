@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import classNames from "classnames";
 import { CaretDownIcon } from "@radix-ui/react-icons";
@@ -6,8 +6,22 @@ import { CaretDownIcon } from "@radix-ui/react-icons";
 import "../styles/Navbar.css";
 
 function Navbar() {
+	const [scrollTop, setScrollTop] = useState(0);
+
+	useEffect(() => {
+	  const handleScroll = event => {
+		setScrollTop(window.scrollY);
+	  };
+  
+	  window.addEventListener('scroll', handleScroll);
+  
+	  return () => {
+		window.removeEventListener('scroll', handleScroll);
+	  };
+	}, []);
+
 	return (
-		<NavigationMenu.Root className="NavigationMenuRoot">
+		<NavigationMenu.Root className={`NavigationMenuRoot ${scrollTop > 100 ? 'NavigationScrolled' : ''}`}>
 			<NavigationMenu.List className="NavigationMenuList">
 
             <NavigationMenu.Item>

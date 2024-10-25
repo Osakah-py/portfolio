@@ -5,6 +5,8 @@ import Header from './Header';
 import Navbar from './Navbar';
 import CategoryPresentation from './CategoryPresentation';
 
+import { categoryContent } from "../data/categoryContent";
+
 function App() {
   return (
     <html>
@@ -13,7 +15,13 @@ function App() {
           <Theme accentColor="sky" grayColor="sand" radius="large" scaling="95%">
             <Navbar />
             <Header />
-            <CategoryPresentation />
+            {categoryContent.map((cat) => 
+              <CategoryPresentation 
+              name={cat.name}
+              description={cat.description}
+              button={cat.button}
+              id={cat.id} />
+            )}
           </Theme>
         </ThemeProvider>
       </body>

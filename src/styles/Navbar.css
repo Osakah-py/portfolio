@@ -18,7 +18,7 @@ p {
 	justify-content: center;
 	width: 100vw;
 	z-index: 1;
-}
+} .NavigationScrolled {background-color: var(--color-panel-translucent);}
 
 .NavigationMenuList > div {
 	display: flex;

@@ -2,7 +2,7 @@
 
 .CatPresContainer {
     background-color: rgb(204, 221, 237);
-    margin: 5% 15%;
+    margin: 2% 15%;
     padding: 3% 2%;
     border-radius: var(--radius-6);
 }
