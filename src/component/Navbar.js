@@ -23,13 +23,14 @@ function Navbar() {
 					<NavigationMenu.Trigger className="NavigationMenuTrigger">
                     Engineering course <CaretDownIcon className="CaretDown" aria-hidden />
 					</NavigationMenu.Trigger>
-					<NavigationMenu.Content className="NavigationMenuContent">
+					<NavigationMenu.Content side="bottom" align="start" className="NavigationMenuContent">
 						<ul className="List one">
-
 							<ListItem href="https://stitches.dev/" title="Projects">
                                 All the projects made during the 2 years
                             </ListItem>
-							<ListItem href="/colors" title="Production"/>
+							<ListItem href="/colors" title="Production">
+								Not yet in production...
+							</ListItem>
 						</ul>
 					</NavigationMenu.Content>
 				</NavigationMenu.Item>

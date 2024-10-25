@@ -2,15 +2,12 @@
 
 .CatPresContainer {
     background-color: rgb(204, 221, 237);
-    margin: 5% 10%;
+    margin: 5% 15%;
     padding: 3% 2%;
-    border-radius: max(var(--radius-2), var(--radius-full));
+    border-radius: var(--radius-6);
 }
 .dark .CatPresContainer {
     background-color: rgb(28, 50, 69);
-    margin: 5% 10%;
-    padding: 3% 2%;
-    border-radius: max(var(--radius-2), var(--radius-full));
 }
 
 .CatPresImage {
@@ -19,4 +16,5 @@
     flex-basis: 50%;
     flex-grow: 1;
     min-width: 300px;
+    max-width: 350px;
 }
