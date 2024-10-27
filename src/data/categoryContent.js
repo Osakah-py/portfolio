@@ -7,7 +7,7 @@ export const categoryContent = [
 	},
 	{
 		name: 'My Education',
-		description: 'Getting to ENSEEIHT requires a particular academic background, I did the classic one, you can acces all the details here',
+		description: 'Getting to ENSEEIHT requires a particular academic background, I did the classic one, you can acces all the details here.',
 		button: 'Details',
 		id: '2ed'
 	}	
