@@ -47,11 +47,13 @@ p {
 	color: var(--accent-11);
 }
 .NavigationMenuTrigger:focus,
-.NavigationMenuLink:focus {
+.NavigationMenuLink:focus,
+.NavigationMenuLink.active {
 	box-shadow: 0 0 0 2px var(--accent-7);
 }
 .NavigationMenuTrigger:hover,
-.NavigationMenuLink:hover {
+.NavigationMenuLink:hover,
+.NavigationMenuLink.active {
 	background-color: var(--accent-3);
 }
 

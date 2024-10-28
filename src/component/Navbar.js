@@ -5,6 +5,8 @@ import { CaretDownIcon } from "@radix-ui/react-icons";
 
 import "../styles/Navbar.css";
 
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
 	const [scrollTop, setScrollTop] = useState(0);
 
@@ -25,12 +27,12 @@ function Navbar() {
 			<NavigationMenu.List className="NavigationMenuList">
 
             <NavigationMenu.Item>
-					<NavigationMenu.Link
+					<NavLink
 						className="NavigationMenuLink"
-						href="https://github.com/radix-ui"
+						to="/"
 					>
 						Welcome
-					</NavigationMenu.Link>
+					</NavLink>
 				</NavigationMenu.Item>
 
 				<NavigationMenu.Item>
@@ -39,7 +41,7 @@ function Navbar() {
 					</NavigationMenu.Trigger>
 					<NavigationMenu.Content side="bottom" align="start" className="NavigationMenuContent">
 						<ul className="List one">
-							<ListItem href="https://stitches.dev/" title="Projects">
+							<ListItem href="/projects" title="Projects">
                                 All the projects made during the 2 years
                             </ListItem>
 							<ListItem href="/colors" title="Production">
