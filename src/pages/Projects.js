@@ -4,6 +4,8 @@ import ProjectPresentation from '../component/ProjectPresentation';
 
 import '../styles/Page.css'
 
+import { projectsContent } from '../data/projectsContent';
+
 function Projects() {
     return (
         <Flex
@@ -17,7 +19,13 @@ function Projects() {
                     the opportunity to work on a bunch of different computer science projects. You will 
                     find all of them on this page. </Text>
             </Flex>
-            <ProjectPresentation />
+            {projectsContent.map((proj) => 
+                <ProjectPresentation
+                    name={proj.name}
+                    type={proj.type}
+                    image={proj.image}
+                    text1={proj.text1}
+                    text2={proj.text2} />)}
         </Flex>
     )
 
