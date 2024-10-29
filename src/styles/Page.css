@@ -1,0 +1,8 @@
+@import "@radix-ui/themes/tokens/base.css";
+
+.Title {
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+@import "@radix-ui/themes/tokens/base.css";
+
+.ProjectContainer {
+    margin: 2% 15%;
+}
+
+.defaultBox {
+    background-color: rgb(228, 233, 239);
+    border-radius: var(--radius-6);   
+}
+.dark .defaultBox {
+    background-color: rgb(28, 50, 69);
+}
+
+.ProjectPresContainer {
+    flex-basis: 50%;
+    padding: 3% 2%;
+}
+
+.ProjectImage {
+    flex-basis: 50%;
+    flex-grow: 1;
+    /* max-height: 50dvh; */
+    overflow: hidden;
+    position: relative;
+    max-height: 60dvh;
+}
+
+.ProjectImage img {
+    width: auto; /* Assure que l'image prend toute la largeur du conteneur */
+    height: 90%; /* Assure que l'image prend toute la hauteur du conteneur */
+    object-fit: cover; /* Ajuste l'image sans déformation */
+}
