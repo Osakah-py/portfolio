@@ -11,7 +11,7 @@ function Sports() {
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
-      
+
     return (
         <Flex
         direction="column"
@@ -21,13 +21,14 @@ function Sports() {
                 gap="3">
                 <Heading as='h1' size="9"> Sports and Other Activities </Heading>
             </Flex>
-            {sportsContent.map((proj) => 
+            {sportsContent.map((proj, index) => 
                 <ProjectPresentation
                     name={proj.name}
                     type={proj.type}
                     image={proj.image}
                     text1={proj.text1}
-                    text2={proj.text2} />)}
+                    text2={proj.text2}
+                    index={index} />)}
         </Flex>
     )
 

@@ -30,13 +30,14 @@ function Projects() {
                 I joined my school's TVn7 audiovisual association to improve my skills in this area.
                 </Text>
             </Flex>
-            {projectsContent.map((proj) => 
+            {projectsContent.map((proj, index) => 
                 <ProjectPresentation
                     name={proj.name}
                     type={proj.type}
                     image={proj.image}
                     text1={proj.text1}
-                    text2={proj.text2} />)}
+                    text2={proj.text2}
+                    index={index} />)}
         </Flex>
     )
 

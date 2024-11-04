@@ -11,7 +11,7 @@ function Education() {
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
-      
+
     return (
         <Flex
         direction="column"
@@ -29,13 +29,14 @@ function Education() {
                 with a strong theoretical foundation in computer science.
                 </Text>
             </Flex>
-            {educationContent.map((educ) => 
+            {educationContent.map((educ, index) => 
                 <ProjectPresentation
                     name={educ.name}
                     type={educ.type}
                     image={educ.image}
                     text1={educ.text1}
-                    text2={educ.text2} />)}
+                    text2={educ.text2}
+                    index={index} />)}
         </Flex>
     )
 

@@ -4,7 +4,7 @@ import { Text, Flex, Strong, Heading, Em } from '@radix-ui/themes';
 
 import "../styles/ProjectPresentation.css"
 
-function ProjectPresentation({name, type, image, text1, text2}) {
+function ProjectPresentation({name, type, image, text1, text2, index}) {
     return (
         <Flex className="ProjectContainer"
             justify="center"
@@ -13,7 +13,8 @@ function ProjectPresentation({name, type, image, text1, text2}) {
             <Flex className="ProjectPresContainer defaultBox"
                 direction="column"
                 justify="center" 
-                gap="5">
+                gap="5"
+                style={index % 2 === 0 ? { order: 2 } : {}}>
                 <Em>{type}</Em>
                 <Heading>{name}</Heading>
                 <Text size="5">
