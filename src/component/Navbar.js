@@ -54,44 +54,37 @@ function Navbar() {
 								title="PCE"
 								href="/primitives/docs/overview/introduction"
 							>
-								Build high-quality, accessible design systems and web apps.
+								???
 							</ListItem>
 							<ListItem
 								title="LV2"
 								href="/primitives/docs/overview/getting-started"
 							>
-								A quick tutorial to get you up and running with Radix
-								Primitives.
+								I chose Chinese as LV2 
 							</ListItem>
-							<ListItem title="LV3" href="/primitives/docs/guides/styling">
-								Unstyled and compatible with any styling solution.
-							</ListItem>
-							<ListItem
-								title="JSP"
-								href="/primitives/docs/guides/animation"
-							>
-								Use CSS keyframes or any animation library of your choice.
+							<ListItem title="Other" href="/primitives/docs/guides/styling">
+								I speak Romanian
 							</ListItem>
 						</ul>
 					</NavigationMenu.Content>
 				</NavigationMenu.Item>
 
 				<NavigationMenu.Item>
-					<NavigationMenu.Link
+					<NavLink
 						className="NavigationMenuLink"
-						href="/sports"
+						to="/sports"
 					>
 						Sport & other activities
-					</NavigationMenu.Link>
+					</NavLink>
 				</NavigationMenu.Item>
 
                 <NavigationMenu.Item>
-					<NavigationMenu.Link
+					<NavLink
 						className="NavigationMenuLink"
-						href="https://github.com/radix-ui"
+						to="/education"
 					>
 						Career Development
-					</NavigationMenu.Link>
+					</NavLink>
 				</NavigationMenu.Item>
 
 				<NavigationMenu.Indicator className="NavigationMenuIndicator">
