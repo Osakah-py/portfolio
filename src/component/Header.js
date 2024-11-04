@@ -23,8 +23,8 @@ function Header() {
                 <Text as='p'> Hi ! I'm <Em>Alexandre</Em>, a passionate computer science student at <Em>ENSEEIHT</Em> </Text>
                 <Flex
                     gap="3">
-                <Button variant='surface' style={{"max-width" : "100px"}}>CV 🇫🇷</Button>         
-                <Button variant='surface' style={{"max-width" : "100px"}}>CV 🇬🇧</Button>     
+                <a href="/Alexandre_Lescot_CV_FR.pdf"><Button variant='surface' style={{"max-width" : "100px"}}>CV 🇫🇷</Button> </a>        
+                <a href="/Alexandre_Lescot_CV_EN.pdf"><Button variant='surface' style={{"max-width" : "100px"}}>CV 🇬🇧</Button> </a>    
                 </Flex>    
             </Flex>
             
