@@ -1,4 +1,5 @@
 import shopInpImage from "../assets/shop-inp.png"
+import clubPresseGrenoble from "../assets/presse-grenoble.jpg"
 
 export const projectsContent = [
     {
@@ -12,14 +13,17 @@ export const projectsContent = [
                     user experience. This role allowed me to strengthen my CSS skills, with a focus on creating responsive designs optimized for mobile devices.`
     },
     {
-        name: '',
-        type: '',
-        image: '',
-        text1: ``,
-        text2: ``
+        name: 'Report on discrimination and racism',
+        type: 'Video report',
+        image: clubPresseGrenoble,
+        text1: `In 2018, I took on my first project that truly sparked my interest in audiovisual work. 
+                I entered a competition where the goal was to create a report on discrimination and racism. `,
+        text2: `With a small team of friends, we researched the topic and conducted interviews with students 
+                and teachers at our school. Our efforts paid off—we had the honor of winning first prize, which
+                 was presented to us at the Isère prefecture.`
     },
     {
-        name: '',
+        name: 'More to come...',
         type: '',
         image: '',
         text1: ``,
