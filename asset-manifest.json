@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.11e232b3.css",
-    "main.js": "/static/js/main.68593065.js",
+    "main.js": "/static/js/main.b769ac52.js",
     "static/js/453.0394f42a.chunk.js": "/static/js/453.0394f42a.chunk.js",
     "static/media/monterey-sierra-blue-night.jpg": "/static/media/monterey-sierra-blue-night.36b9a5bfda4a8a28b0c8.jpg",
     "static/media/monterey-sierra-blue-day.jpg": "/static/media/monterey-sierra-blue-day.1ed686f62a850d27d8ed.jpg",
     "static/media/template.png": "/static/media/template.1cba749b1401bfeaa39c.png",
+    "static/media/les-bras-casses.png": "/static/media/les-bras-casses.6172b83da1c740da1714.png",
     "static/media/champollion.jpg": "/static/media/champollion.7a2c5bafe02a90159cf1.jpg",
     "static/media/shop-inp.png": "/static/media/shop-inp.fb1628f60f49aa9b6146.png",
     "static/media/presse-grenoble.jpg": "/static/media/presse-grenoble.6acfd30972cd40dba0a7.jpg",
     "index.html": "/index.html",
     "main.11e232b3.css.map": "/static/css/main.11e232b3.css.map",
-    "main.68593065.js.map": "/static/js/main.68593065.js.map",
+    "main.b769ac52.js.map": "/static/js/main.b769ac52.js.map",
     "453.0394f42a.chunk.js.map": "/static/js/453.0394f42a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.11e232b3.css",
-    "static/js/main.68593065.js"
+    "static/js/main.b769ac52.js"
   ]
 }
