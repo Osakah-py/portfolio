@@ -1,5 +1,12 @@
 export const categoryContent = [
 	{
+		name: 'Civic Engagement',
+		description: "I'm part of the “Cordées de la Réussite” program, which helps high school students from disadvantaged backgrounds discover the engineering professions.",
+		button: "More",
+		link: '/',
+		id: '1ed'
+	},
+	{
 		name: 'My Projects',
 		description: 'From simple interfaces to complex web interfaces, during my two years at ENSEEIHT I had the opportunity to work on a bunch of different computer science projects.',
 		button: 'View all my projects',
