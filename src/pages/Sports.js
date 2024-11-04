@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Flex, Box, Text, Heading } from '@radix-ui/themes';
 
 import ProjectPresentation from '../component/ProjectPresentation';
@@ -7,6 +8,10 @@ import '../styles/Page.css'
 import { sportsContent } from '../data/sportsContent';
 
 function Sports() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+      
     return (
         <Flex
         direction="column"

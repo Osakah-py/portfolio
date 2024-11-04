@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Text, Flex, Box, Button, Heading } from '@radix-ui/themes';
+import projects from "../assets/projects.png"
 
 import "../styles/CategoryPresentation.css";
 
@@ -26,7 +27,7 @@ function CategoryPresentation({ name, description, button, link, id }) {
                         <Button variant='surface' style={{ "max-width": "150px", "padding": "20px 5px" }}>{button}</Button>
                     </Link>
                 </Flex>
-                <img className="CatPresImage" src="https://framerusercontent.com/images/eSSOryz6R0dgWVPDhxZuRb7oV5E.gif" />
+                <img className="CatPresImage" src={projects} />
             </Flex>
         </Box>
     )
