@@ -1,11 +1,11 @@
-import shopInpImage from "../assets/shop-inp.png"
+import tennis from "../assets/tennis.jpg"
 import youtube from "../assets/les-bras-casses.png"
 
 export const sportsContent = [
     {
         name: 'Tennis',
         type: 'Sport',
-        image: shopInpImage,
+        image: tennis,
         text1: `I played tennis for over 10 years. I took part in a few competitions but nothing more. 
                 I had to stop during the preparatory class but I resumed in the first year of engineering school.`,
         text2: `My best rank is 30/1`
