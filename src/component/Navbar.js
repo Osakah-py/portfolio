@@ -34,21 +34,14 @@ function Navbar() {
 						Welcome
 					</NavLink>
 				</NavigationMenu.Item>
-
+				<NavLink
+						className="NavigationMenuLink"
+						to="/projects"
+					>
+						Projects
+					</NavLink>
 				<NavigationMenu.Item>
-					<NavigationMenu.Trigger className="NavigationMenuTrigger">
-                    Engineering course <CaretDownIcon className="CaretDown" aria-hidden />
-					</NavigationMenu.Trigger>
-					<NavigationMenu.Content side="bottom" align="start" className="NavigationMenuContent">
-						<ul className="List one">
-							<ListItem href="/projects" title="Projects">
-                                All the projects made during the 2 years
-                            </ListItem>
-							<ListItem href="/colors" title="Production">
-								Not yet in production...
-							</ListItem>
-						</ul>
-					</NavigationMenu.Content>
+
 				</NavigationMenu.Item>
 
 				<NavigationMenu.Item>
@@ -79,18 +72,6 @@ function Navbar() {
 							>
 								Use CSS keyframes or any animation library of your choice.
 							</ListItem>
-							<ListItem
-								title="Accessibility"
-								href="/primitives/docs/overview/accessibility"
-							>
-								Tested in a range of browsers and assistive technologies.
-							</ListItem>
-							<ListItem
-								title="Releases"
-								href="/primitives/docs/overview/releases"
-							>
-								Radix Primitives releases and their changelogs.
-							</ListItem>
 						</ul>
 					</NavigationMenu.Content>
 				</NavigationMenu.Item>
@@ -98,7 +79,7 @@ function Navbar() {
 				<NavigationMenu.Item>
 					<NavigationMenu.Link
 						className="NavigationMenuLink"
-						href="https://github.com/radix-ui"
+						href="/sports"
 					>
 						Sport & other activities
 					</NavigationMenu.Link>

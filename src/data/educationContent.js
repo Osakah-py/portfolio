@@ -13,13 +13,6 @@ export const educationContent = [
         text2: ``
     },
     {
-        name: 'Report on discrimination and racism',
-        type: 'Video report',
-        image: clubPresseGrenoble,
-        text1: ``,
-        text2: ``
-    },
-    {
         name: 'More to come...',
         type: '',
         image: '',
