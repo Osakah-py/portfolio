@@ -1,13 +1,12 @@
 import React from "react";
 
 import { Text, Flex, Box, Button, Heading } from '@radix-ui/themes';
-import projects from "../assets/projects.png"
 
 import "../styles/CategoryPresentation.css";
 
 import { Link } from "react-router-dom";
 
-function CategoryPresentation({ name, description, button, link, id }) {
+function CategoryPresentation({ name, description, button, link, id, image }) {
     return (
         <Box key={id} className="CatPresContainer">
             <Flex
@@ -27,7 +26,7 @@ function CategoryPresentation({ name, description, button, link, id }) {
                         <Button variant='surface' style={{ "max-width": "150px", "padding": "20px 5px" }}>{button}</Button>
                     </Link>
                 </Flex>
-                <img className="CatPresImage" src={projects} />
+                <img className="CatPresImage" src={image} />
             </Flex>
         </Box>
     )

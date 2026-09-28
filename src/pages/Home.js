@@ -13,7 +13,8 @@ function Home() {
                     description={cat.description}
                     button={cat.button}
                     link={cat.link}
-                    id={cat.id} />
+                    id={cat.id}
+                    image={cat.image} />
             )}
         </div>
     )
